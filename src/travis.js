@@ -1,5 +1,5 @@
 const travis = {
-  repo: process.env.CIRCLE_REPOSITORY_URL,
+  repo: `${process.env.CIRCLE_PROJECT_USERNAME}/${process.env.CIRCLE_PROJECT_REPONAME}`,
   token: process.env.github_token,
   event_type: 'pull_request',
   sha: process.env.CIRCLE_SHA1,
