@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "test": "node index"
+    "test": "babel-node index"
   },
   "keywords": [
     "library",
@@ -34,5 +34,8 @@
       "path": "./index.js",
       "threshold": "600B"
     }
-  ]
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  }
 }
