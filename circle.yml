@@ -4,7 +4,7 @@ jobs:
     working_directory: ~/bundlesize
     parallelism: 1
     docker:
-      - image: node:8.1.2
+      - image: node:7.10.0
     steps:
       - checkout
       - run:
