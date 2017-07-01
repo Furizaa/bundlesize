@@ -14,7 +14,6 @@ if (process.env.CIRCLECI) {
 } else {
   // Default to travis
   // See https://docs.travis-ci.com/user/environment-variables/ for reference.
-  // @TODO: Perhaps let the end-user know which environment is loaded.
   environment = {
     repo: process.env.TRAVIS_REPO_SLUG,
     token: process.env.github_token,
